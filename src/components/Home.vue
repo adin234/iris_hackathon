@@ -166,8 +166,8 @@ export default {
           this.result = response
           this.sending = false;
         })
-        .catch(() => {
-          this.result = "Error"
+        .catch((e) => {
+          this.result = `Error: ${e}`
           this.loading = false;
         });
     },
